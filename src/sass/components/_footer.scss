@@ -1,7 +1,34 @@
 .footer {
+  height: 240px;
+  padding: 32px 100px;
   background-image: url(./../images/footer.png);
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  &__container {
+    @include centeredFlex();
+    gap: 168px;
+    height: 176px;
+  }
+  &__nav-list,
+  &__address {
+    width: 211px;
+    @include centeredFlex($align: flex-start, $justify: left);
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  &__nav-list {
+    padding-right: 50px;
+  }
+  &__nav-link {
+    @include text($color: var(--color-primary-light));
+  }
+  &__text {
+    @include text(
+      $size: 15px,
+      $font-weight: 300,
+      $color: var(--color-primary-light)
+    );
+  }
 }

@@ -1,0 +1,36 @@
+.contacts {
+  padding-bottom: 96px;
+  @include centeredFlex();
+  gap: 32px;
+  &__container {
+    max-width: 605px;
+  }
+  &__title {
+    text-align: start;
+    margin-bottom: 16px;
+  }
+  &__subtitle {
+    margin-bottom: 42px;
+  }
+  &__text,
+  &__link {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    @include text($size: 12px);
+  }
+  &__map {
+    width: 603px;
+    height: 595px;
+  }
+}
+.contacts-form {
+  @include centeredFlex();
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  &__input {
+    width: 605px;
+    padding: 16px 42px;
+  }
+}

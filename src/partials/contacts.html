@@ -1,15 +1,25 @@
-<section id="contacts-section" class="section">
-  <h2 class="title">Приєднуйся до мережі пекарень</h2>
-  <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-  <form>
-    <input type="text" placeholder="Ім’я" />
-    <input type="text" placeholder="Телефон" />
-    <input type="text" placeholder="Електронна пошта" />
-    <button type="submit" class="btn-order">Замовити дзвінок</button>
-    <p>Натискаючи на кнопку я погоджуюсь з</p>
-    <a href="#">політикою конфіденційності</a>
-  </form>
+<section id="contacts-section" class="section contacts">
+  <div class="contacts__container">
+    <h2 class="title contacts__title">Приєднуйся до мережі пекарень</h2>
+    <p class="contacts__subtitle">Заповни форму, щоб ми звʼязались з тобою!</p>
+    <form class="contacts-form">
+      <input class="contacts-form__input" type="text" placeholder="Ім’я" />
+      <input class="contacts-form__input" type="text" placeholder="Телефон" />
+      <input
+        class="contacts-form__input"
+        type="text"
+        placeholder="Електронна пошта"
+      />
+      <button type="submit" class="btn-order contacts-form__btn">
+        Замовити дзвінок
+      </button>
+    </form>
+    <p class="contacts__text">Натискаючи на кнопку я погоджуюсь з</p>
+    <a class="contacts__link" href="#">політикою конфіденційності</a>
+  </div>
+
   <iframe
+    class="contacts__map"
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2540.1640531314047!2d30.4886586!3d50.4566697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1701004204603!5m2!1suk!2sua"
     max-width="603"
     max-height="595"
