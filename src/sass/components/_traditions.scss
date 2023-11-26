@@ -1,0 +1,52 @@
+.traditions {
+  padding: 0;
+  &__list {
+    width: 1440px;
+    padding: 16px 0;
+    @include centeredFlex();
+    gap: 160px;
+    background-color: var(--color-primary-accent);
+  }
+  &__item {
+    @include text(
+      $size: 20px,
+      $font-weight: 300,
+      $color: var(--color-primary-light)
+    );
+  }
+  &__container {
+    padding: 0 100px;
+    display: flex;
+    gap: 104px;
+    padding-bottom: 96px;
+  }
+  &__part {
+    margin-top: 96px;
+    width: 710px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 42px;
+  }
+  &__title {
+    text-align: start;
+  }
+  &__text {
+    width: 600px;
+    &--width {
+      width: 350px;
+    }
+    &--transform {
+      @include text($font-weight: 600, $color: var(--color-primary-accent));
+      text-transform: uppercase;
+    }
+    &--color {
+      @include text($font-weight: 600, $color: var(--color-primary-accent));
+    }
+  }
+  &__image {
+    margin-top: 96px;
+    width: 393px;
+    height: 466px;
+    border-radius: 400px 400px 0px 0px;
+  }
+}

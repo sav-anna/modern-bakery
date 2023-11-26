@@ -1,0 +1,27 @@
+.header {
+  width: 1440px;
+  padding-left: 103px;
+  padding-right: 87px;
+  margin-left: auto;
+  margin-right: auto;
+  &__container {
+    width: 1250px;
+    height: 59px;
+    @include centeredFlex($justify: space-between);
+  }
+  &-nav {
+    &__list {
+      @include centeredFlex();
+      gap: 64px;
+    }
+    // &__item {
+    // }
+    &__link {
+      @include text($font-weight: 600, $color: var(--color-primary-light));
+      &:hover,
+      &:focus {
+        color: var(--color-primary-accent);
+      }
+    }
+  }
+}

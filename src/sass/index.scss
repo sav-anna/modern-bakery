@@ -1,2 +1,15 @@
-@import './common';
-@import './header';
+@import './utils/common';
+@import './utils/fonts';
+@import './utils/breakpoints';
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/base';
+@import './components/buttons';
+@import './components/chefs';
+@import './components/contacts';
+@import './components/footer';
+@import './components/formats';
+@import './components/header';
+@import './components/logo';
+@import './components/hero';
+@import './components/traditions';

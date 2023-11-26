@@ -1,0 +1,46 @@
+.chefs {
+  margin-bottom: 96px;
+  &__title {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      width: 352px;
+      height: 2px;
+      background-color: var(--color-secondary-light);
+    }
+    &--color {
+      color: var(--color-primary-accent);
+    }
+  }
+}
+
+.chefs-list {
+  @include centeredFlex();
+  gap: 30px;
+  &__item {
+    @include centeredFlex($align: flex-start);
+    gap: 30px;
+  }
+  &__img {
+    width: 268px;
+    height: 445px;
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--color-primary-light),
+      -16px 16px 0 2px var(--color-secondary-dark);
+  }
+  &__article {
+    width: 334px;
+  }
+  &__title {
+    margin-bottom: 16px;
+    @include text($size: 40px, $font-weight: 600);
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+}

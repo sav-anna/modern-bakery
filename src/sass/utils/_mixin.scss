@@ -1,0 +1,16 @@
+@mixin centeredFlex($type: flex, $align: center, $justify: center) {
+  display: $type;
+  align-items: $align;
+  justify-content: $justify;
+}
+@mixin text(
+  $size: 18px,
+  $line-height: 1.5,
+  $font-weight: 400,
+  $color: var(--color-primary-dark)
+) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}

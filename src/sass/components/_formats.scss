@@ -1,0 +1,49 @@
+.formats {
+  padding-bottom: 96px;
+  &__list {
+    @include centeredFlex();
+    gap: 20px;
+    padding: 80 0 32px;
+  }
+  &__item {
+    position: relative;
+    width: 349px;
+    height: 444px;
+    // background: linear-gradient(
+    //   180deg,
+    //   rgba(49, 38, 26, 0) 55.21%,
+    //   rgba(49, 38, 26, 0.71) 72.92%,
+    //   var(--color-primary-dark) 100%
+    // );
+  }
+  &__card {
+    position: absolute;
+    width: 301px;
+    bottom: 24px;
+    left: 24px;
+  }
+  &__subtitle {
+    margin-bottom: 16px;
+    @include text(
+      $size: 24px,
+      $font-weight: 600,
+      $color: var(--color-primary-light)
+    );
+  }
+  &__img {
+    border-radius: 16px;
+    background: linear-gradient(
+      180deg,
+      rgba(49, 38, 26, 0) 55.21%,
+      rgba(49, 38, 26, 0.71) 72.92%,
+      var(--color-primary-dark) 100%
+    );
+  }
+  &__text {
+    @include text(
+      $size: 14px,
+      $font-weight: 300,
+      $color: var(--color-primary-light)
+    );
+  }
+}
