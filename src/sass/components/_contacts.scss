@@ -27,7 +27,7 @@
 .contacts-form {
   @include centeredFlex();
   gap: 24px;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 16px;
   &__input {
     width: 605px;

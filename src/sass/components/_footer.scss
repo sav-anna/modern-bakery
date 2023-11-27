@@ -7,20 +7,19 @@
   background-size: cover;
   background-position: center;
   &__container {
-    @include centeredFlex();
+    @include centeredFlex($align: flex-start);
     gap: 168px;
     height: 176px;
   }
   &__nav-list,
-  &__address {
+  &__address,
+  &__policy-block {
     width: 211px;
     @include centeredFlex($align: flex-start, $justify: left);
     gap: 16px;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  &__nav-list {
-    padding-right: 50px;
-  }
+
   &__nav-link {
     @include text($color: var(--color-primary-light));
   }
@@ -30,5 +29,17 @@
       $font-weight: 300,
       $color: var(--color-primary-light)
     );
+    font-style: normal;
+
+    &--color {
+      @include text($size: 14px, $color: var(--color-secondary-dark));
+    }
+  }
+  &__icons {
+    display: flex;
+    gap: 22px;
+  }
+  &__icon {
+    fill: var(--color-primary-light);
   }
 }
