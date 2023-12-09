@@ -1,20 +1,25 @@
 .chefs {
-  margin-bottom: 96px;
   &__title {
-    max-width: 520px;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    margin: 0 auto;
     margin-bottom: 80px;
     &::before,
     &::after {
+      position: absolute;
+      bottom: 0;
       content: '';
-      display: block;
       width: 352px;
       height: 2px;
       background-color: var(--color-secondary-light);
     }
     &--color {
       color: var(--color-primary-accent);
+    }
+    &::before {
+      left: 0;
+    }
+    &::after {
+      right: 0;
     }
   }
 }

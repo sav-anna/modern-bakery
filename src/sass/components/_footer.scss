@@ -1,35 +1,80 @@
 .footer {
-  height: 240px;
-  padding: 32px 100px;
+  position: relative;
+  height: 515px;
+  padding: 34px 91px;
   background-image: url(./../images/footer.png);
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @media screen and (min-width: $tablet) {
+    padding: 32px 100px;
+    height: 240px;
+  }
+  &::after {
+    content: '';
+    width: 380px;
+    height: 190px;
+    background-image: url(./../images/bread.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &::before {
+    content: '';
+    width: 180px;
+    height: 120px;
+    background-image: url(./../images/bread-ear.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+  }
+
   &__container {
-    @include centeredFlex($align: flex-start);
-    gap: 168px;
-    height: 176px;
+    display: block;
+    @media screen and (min-width: $tablet) {
+      @include centeredFlex($align: flex-start);
+      gap: 168px;
+      height: 176px;
+    }
   }
   &__nav-list,
   &__address,
   &__policy-block {
-    width: 211px;
-    @include centeredFlex($align: flex-start, $justify: left);
-    gap: 16px;
+    width: 170px;
+    @include centeredFlex();
+    gap: 18px;
     flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+      @include centeredFlex($align: flex-start, $justify: left);
+      gap: 16px;
+      width: 211px;
+    }
   }
 
   &__nav-link {
-    @include text($color: var(--color-primary-light));
+    @include text($size: 14px, $color: var(--color-primary-light));
+    @media screen and (min-width: $tablet) {
+      @include text($color: var(--color-primary-light));
+    }
   }
   &__text {
     @include text(
-      $size: 15px,
+      $size: 14px,
       $font-weight: 300,
       $color: var(--color-primary-light)
     );
     font-style: normal;
+    @media screen and (min-width: $tablet) {
+      @include text(
+        $size: 16px,
+        $font-weight: 300,
+        $color: var(--color-primary-light)
+      );
+    }
 
     &--color {
       @include text($size: 14px, $color: var(--color-secondary-dark));
@@ -41,5 +86,13 @@
   }
   &__icon {
     fill: var(--color-primary-light);
+  }
+  &__logo {
+    @media screen and (max-width: $tablet) {
+      display: block;
+      margin-bottom: 32px;
+      margin: 0 auto;
+      width: 72px;
+    }
   }
 }

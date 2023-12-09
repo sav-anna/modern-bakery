@@ -1,5 +1,4 @@
 .contacts {
-  padding-bottom: 96px;
   @include centeredFlex();
   gap: 32px;
   &__container {
@@ -30,7 +29,7 @@
   flex-direction: column;
   margin-bottom: 16px;
   &__input {
-    width: 605px;
+    max-width: 605px;
     padding: 16px 42px;
   }
 }

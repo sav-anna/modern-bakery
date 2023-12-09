@@ -1,25 +1,76 @@
 .hero {
-  width: 1440px;
-  height: 736px;
+  max-width: 360px;
+  height: 378px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
   background-image: linear-gradient(
       103deg,
       rgba(18, 18, 17, 0.78) 2.03%,
       rgba(18, 18, 17, 0.6) 58.46%,
       rgba(18, 18, 17, 0) 90.36%
     ),
-    url(./../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
+    url(./../images/hero-mobile.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        103deg,
+        rgba(18, 18, 17, 0.78) 2.03%,
+        rgba(18, 18, 17, 0.6) 58.46%,
+        rgba(18, 18, 17, 0) 90.36%
+      ),
+      url(./../images/hero-mobile2x.jpg);
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: 1440px;
+    height: 736px;
+
+    background-image: linear-gradient(
+        103deg,
+        rgba(18, 18, 17, 0.78) 2.03%,
+        rgba(18, 18, 17, 0.6) 58.46%,
+        rgba(18, 18, 17, 0) 90.36%
+      ),
+      url(./../images/hero-desktop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          103deg,
+          rgba(18, 18, 17, 0.78) 2.03%,
+          rgba(18, 18, 17, 0.6) 58.46%,
+          rgba(18, 18, 17, 0) 90.36%
+        ),
+        url(./../images/hero-desktop2x.jpg);
+    }
+  }
+
   &__title {
     text-align: center;
     padding-top: 272px;
     @include text(
-      $size: 128px,
+      $size: 67px,
       $font-weight: 900,
       $color: var(--color-primary-light)
     );
+    @media screen and (min-width: $tablet) {
+      @include text(
+        $size: 87px,
+        $font-weight: 900,
+        $color: var(--color-primary-light)
+      );
+    }
 
+    @media screen and (min-width: $desktop) {
+      @include text(
+        $size: 128px,
+        $font-weight: 900,
+        $color: var(--color-primary-light)
+      );
+    }
     &--color {
       color: var(--color-primary-accent);
     }

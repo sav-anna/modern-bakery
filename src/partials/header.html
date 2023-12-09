@@ -1,26 +1,33 @@
-<header class="header">
+<header class="header section">
   <div class="header__container">
     <a class="nav__logo" href="/">
       <img src="./images/logo.png" alt="логотип сучасної пекарні" />
     </a>
     <nav class="header-nav">
-      <ul class="header-nav__list">
-        <li class="header-nav__item">
-          <a class="header-nav__link" href="#traditions-section"
-            >Наші традиції</a
-          >
-        </li>
-        <li class="header-nav__item">
-          <a class="header-nav__link" href="#chefs-section">Шеф-кухарі</a>
-        </li>
-        <li class="header-nav__item">
-          <a class="header-nav__link" href="#formats-section">Формати</a>
-        </li>
-        <li class="header-nav__item">
-          <a class="header-nav__link" href="#contacts-section">Контакти</a>
-        </li>
-      </ul>
+      <button class="header-nav__burger-menu" type="button">
+        <svg width="24" height="24" aria-label="Кнопка мобільного меню">
+          <use href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="header-nav__part">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#traditions-section"
+              >Наші традиції</a
+            >
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#chefs-section">Шеф-кухарі</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#formats-section">Формати</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#contacts-section">Контакти</a>
+          </li>
+        </ul>
+        <button class="btn-order" type="button">Замовити дзвінок</button>
+      </div>
     </nav>
-    <button class="btn-order" type="button">Замовити дзвінок</button>
   </div>
 </header>

@@ -41,18 +41,27 @@ ul {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 .section {
-  width: 1440px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 100px;
-  padding-right: 100px;
-  // @media screen and (min-width: $mobile) {
-  //   width: 360px;
-  // }
+  margin: 0 auto;
+  @media screen and (min-width: $mobile) {
+    width: 360px;
+    padding: 20px 20px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 1024px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1440px;
+    padding: 48px 100px;
+  }
 }
+
 .title {
-  @include text($size: 64px, $font-weight: 900, $line-height: 1.31);
+  @include text($size: 32px, $font-weight: 900, $line-height: 1.31);
   text-align: center;
+  @media screen and (min-width: $desktop) {
+    @include text($size: 64px, $font-weight: 900, $line-height: 1.31);
+  }
 }
