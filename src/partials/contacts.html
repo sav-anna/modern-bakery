@@ -2,14 +2,18 @@
   <div class="contacts__container">
     <h2 class="title contacts__title">Приєднуйся до мережі пекарень</h2>
     <p class="contacts__subtitle">Заповни форму, щоб ми звʼязались з тобою!</p>
-    <form class="contacts-form">
-      <input class="contacts-form__input" type="text" placeholder="Ім’я" />
-      <input class="contacts-form__input" type="text" placeholder="Телефон" />
-      <input
-        class="contacts-form__input"
-        type="text"
-        placeholder="Електронна пошта"
-      />
+    <form
+      class="contacts-form"
+      name="contacts-form"
+      autocomplete="off"
+      novalidate
+    >
+      <label for="name">Ім`я</label>
+      <input class="contacts-form__input" type="text" id="name" />
+      <label for="tel">Телефон</label>
+      <input class="contacts-form__input" type="tel" id="tel" />
+      <label for="email">Електронна пошта</label>
+      <input class="contacts-form__input" type="email" />
       <button type="submit" class="btn-order contacts-form__btn">
         Замовити дзвінок
       </button>

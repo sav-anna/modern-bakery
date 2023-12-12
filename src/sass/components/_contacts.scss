@@ -1,6 +1,10 @@
 .contacts {
   @include centeredFlex();
   gap: 32px;
+  padding-bottom: 96px;
+  @media screen and(max-width:$mobile) {
+    flex-direction: column;
+  }
   &__container {
     max-width: 605px;
   }
@@ -21,6 +25,10 @@
   &__map {
     width: 603px;
     height: 595px;
+    @media screen and (max-width: $mobile) {
+      width: 360px;
+      height: 176px;
+    }
   }
 }
 .contacts-form {
@@ -29,7 +37,7 @@
   flex-direction: column;
   margin-bottom: 16px;
   &__input {
-    max-width: 605px;
+    width: 605px;
     padding: 16px 42px;
   }
 }

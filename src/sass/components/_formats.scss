@@ -3,12 +3,19 @@
     @include centeredFlex();
     gap: 20px;
     padding: 80 0 32px;
+    @media screen and(max-width:$mobile) {
+      flex-direction: column;
+    }
   }
   &__item {
     position: relative;
     width: 349px;
     height: 444px;
     border-radius: 16px;
+    @media screen and (max-width: $mobile) {
+      width: 321px;
+      height: 442px;
+    }
     &::before {
       content: '';
       position: absolute;
