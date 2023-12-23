@@ -1,4 +1,5 @@
 .btn-order {
+  cursor: pointer;
   width: 238px;
   height: 59px;
   padding: 16px 32px;
@@ -9,4 +10,9 @@
   background-color: var(--color-primary-accent);
   border-radius: 8px;
   border: 2px solid var(--color-primary-accent);
+  &:hover,
+  &:focus {
+    color: var(--color-secondary-accent);
+    background-color: transparent;
+  }
 }

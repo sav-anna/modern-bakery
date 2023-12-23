@@ -1,11 +1,13 @@
 .contacts {
-  @include centeredFlex();
-  gap: 32px;
   padding-bottom: 96px;
   @media screen and(max-width:$mobile) {
     flex-direction: column;
   }
   &__container {
+    @include centeredFlex();
+    gap: 32px;
+  }
+  &__blok {
     max-width: 605px;
   }
   &__title {
@@ -32,12 +34,27 @@
   }
 }
 .contacts-form {
-  @include centeredFlex();
+  @include centeredFlex($align: flex-start);
   gap: 24px;
   flex-direction: column;
   margin-bottom: 16px;
+
   &__input {
     width: 605px;
     padding: 16px 42px;
+    border: 1px solid var(--color-secondary-dark);
+    background-color: transparent;
+    border-radius: 8px;
+    &:focus,
+    &:hover {
+      border-color: var(--color-primary-accent);
+      outline: none;
+    }
+    &::placeholder {
+      color: var(--color-secondary-dark);
+    }
+  }
+  &__btn {
+    margin: 0 auto;
   }
 }

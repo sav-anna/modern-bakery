@@ -1,5 +1,5 @@
 .hero {
-  max-width: 360px;
+  // max-width: 360px;
   height: 378px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,7 @@
       url(./../images/hero-mobile2x.jpg);
   }
   @media screen and (min-width: $tablet) {
-    max-width: 1440px;
+    // max-width: 1440px;
     height: 736px;
 
     background-image: linear-gradient(

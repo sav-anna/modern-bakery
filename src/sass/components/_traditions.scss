@@ -1,19 +1,6 @@
 .traditions {
   padding: 0;
-  &__list {
-    max-width: 1440px;
-    padding: 16px 0;
-    @include centeredFlex();
-    gap: 160px;
-    background-color: var(--color-primary-accent);
-  }
-  &__item {
-    @include text(
-      $size: 20px,
-      $font-weight: 300,
-      $color: var(--color-primary-light)
-    );
-  }
+
   &__container {
     padding: 0 100px;
     display: flex;

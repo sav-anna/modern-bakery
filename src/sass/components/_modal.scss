@@ -93,6 +93,7 @@
 }
 
 .modal__input:focus + .modal__label,
+.modal__input:not(:placeholder-shown) + .modal__label,
 .modal__input:hover + .modal__label {
   transform: translate(-40px, -40px);
   color: var(--color-primary-dark);

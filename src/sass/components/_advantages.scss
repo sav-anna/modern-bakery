@@ -1,0 +1,17 @@
+.advantages {
+  background-color: var(--color-primary-accent);
+  padding: 16px 0;
+  &__list {
+    max-width: 1240px;
+
+    @include centeredFlex();
+    gap: 160px;
+  }
+  &__item {
+    @include text(
+      $size: 20px,
+      $font-weight: 300,
+      $color: var(--color-primary-light)
+    );
+  }
+}

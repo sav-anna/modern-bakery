@@ -16,15 +16,37 @@
     </p>
     <form class="modal__form">
       <div class="modal__field">
-        <input class="modal__input" id="user-name" type="text" />
+        <input
+          class="modal__input"
+          id="user-name"
+          type="text"
+          required
+          minlength="2"
+          maxlength="20"
+          placeholder=""
+        />
         <label class="modal__label" for="user-name">Ім’я</label>
       </div>
       <div class="modal__field">
-        <input class="modal__input" id="user-telephone" type="text" />
+        <input
+          class="modal__input"
+          id="user-telephone"
+          type="tel"
+          required
+          pattern="^\+[0-9]{12}"
+          placeholder=""
+        />
         <label class="modal__label" for="user-telephone">Телефон</label>
       </div>
       <div class="modal__field">
-        <input class="modal__input" id="user-email" type="text" />
+        <input
+          class="modal__input"
+          id="user-email"
+          type="email"
+          required
+          pattern="/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/"
+          placeholder=""
+        />
         <label class="modal__label" for="user-email">Електронна пошта</label>
       </div>
 
