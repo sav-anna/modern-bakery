@@ -1,35 +1,39 @@
 .traditions {
-  padding: 0;
-
   &__container {
-    padding: 0 100px;
-    display: flex;
-    gap: 104px;
-    @media screen and (max-width: $mobile) {
-      display: block;
-      padding: 0;
+    @media screen and (min-width: $tablet) {
+      padding: 0 100px;
+      display: flex;
+      gap: 104px;
     }
   }
   &__part {
-    margin-top: 96px;
-    width: 710px;
-    display: flex;
-    flex-direction: column;
-    gap: 42px;
-    @media screen and (max-width: $mobile) {
-      width: 322px;
+    @media screen and (min-width: $tablet) {
+      margin-top: 96px;
+      width: 710px;
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
     }
   }
   &__title {
     text-align: start;
+    max-width: 320px;
+    margin-bottom: 24px;
+    @media screen and (min-width: $tablet) {
+      max-width: 710px;
+      margin-bottom: 0;
+    }
   }
   &__text {
-    width: 600px;
-    @media screen and (max-width: $mobile) {
-      width: 322px;
+    width: 322px;
+    font-size: 16px;
+    font-weight: 300;
+    @media screen and (min-width: $tablet) {
+      width: 600px;
+      font-size: 18px;
     }
     &--width {
-      width: 350px;
+      max-width: 350px;
     }
     &--transform {
       @include text($font-weight: 600, $color: var(--color-primary-accent));
@@ -38,14 +42,23 @@
     &--color {
       @include text($font-weight: 600, $color: var(--color-primary-accent));
     }
+    &:not(:last-child) {
+      margin-bottom: 16px;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+      }
+    }
   }
+
   &__image {
-    margin-top: 96px;
-    max-width: 393px;
-    max-height: 466px;
-    border-radius: 400px 400px 0px 0px;
-    @media screen and (max-width: $mobile) {
-      display: none;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+      margin-top: 96px;
+      max-width: 393px;
+      max-height: 466px;
+      border-radius: 400px 400px 0px 0px;
     }
   }
 }

@@ -50,17 +50,22 @@
 
   &__title {
     text-align: center;
-    padding-top: 272px;
+    padding-top: 122px;
+    width: 292px;
     @include text(
       $size: 67px,
       $font-weight: 900,
-      $color: var(--color-primary-light)
+      $color: var(--color-primary-light),
+      $line-height: 1.1
     );
     @media screen and (min-width: $tablet) {
+      padding-top: 272px;
+      width: 100%;
       @include text(
         $size: 87px,
         $font-weight: 900,
-        $color: var(--color-primary-light)
+        $color: var(--color-primary-light),
+        $line-height: 1.5
       );
     }
 

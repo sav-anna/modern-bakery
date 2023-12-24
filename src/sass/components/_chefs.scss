@@ -16,33 +16,46 @@
       color: var(--color-primary-accent);
     }
     &::before {
-      left: 0;
+      display: none;
+      @media screen and (min-width: $tablet) {
+        display: block;
+        left: 0;
+      }
     }
     &::after {
-      right: 0;
+      display: none;
+      @media screen and (min-width: $tablet) {
+        display: block;
+        right: 0;
+      }
     }
   }
 }
 
 .chefs-list {
-  @include centeredFlex();
-  gap: 30px;
-  @media screen and (max-width: $mobile) {
-    display: block;
+  @media screen and (min-width: $tablet) {
+    @include centeredFlex();
+    gap: 30px;
   }
   &__item {
     @include centeredFlex($align: flex-start);
     gap: 30px;
+    &:not(:last-child) {
+      margin-bottom: 35px;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+      }
+    }
   }
   &__img {
-    width: 268px;
-    height: 445px;
+    width: 156px;
+    height: 258px;
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0 0 var(--color-primary-light),
       -16px 16px 0 2px var(--color-secondary-dark);
-    @media screen and (min-width: $mobile) {
-      width: 156px;
-      height: 258px;
+    @media screen and (min-width: $tablet) {
+      width: 268px;
+      height: 445px;
     }
   }
   &__article {
@@ -53,9 +66,13 @@
     @include text($size: 40px, $font-weight: 600);
   }
   &__text {
-    margin-bottom: 20px;
-    @media screen and (max-width: $mobile) {
-      width: 162px;
+    width: 162px;
+    font-size: 14px;
+    font-weight: 300;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: 400;
     }
   }
 }

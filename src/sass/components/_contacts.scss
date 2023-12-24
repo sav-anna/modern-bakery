@@ -1,11 +1,13 @@
 .contacts {
   padding-bottom: 96px;
-  @media screen and(max-width:$mobile) {
-    flex-direction: column;
-  }
+
   &__container {
     @include centeredFlex();
     gap: 32px;
+    flex-direction: column;
+    @media screen and(min-width:$tablet) {
+      flex-direction: row;
+    }
   }
   &__blok {
     max-width: 605px;
@@ -25,11 +27,11 @@
     @include text($size: 12px);
   }
   &__map {
-    width: 603px;
-    height: 595px;
-    @media screen and (max-width: $mobile) {
-      width: 360px;
-      height: 176px;
+    width: 360px;
+    height: 176px;
+    @media screen and (min-width: $tablet) {
+      width: 603px;
+      height: 595px;
     }
   }
 }
@@ -40,11 +42,15 @@
   margin-bottom: 16px;
 
   &__input {
-    width: 605px;
-    padding: 16px 42px;
+    width: 320px;
+    padding: 8px 24px;
     border: 1px solid var(--color-secondary-dark);
     background-color: transparent;
     border-radius: 8px;
+    @media screen and (min-width: $tablet) {
+      width: 605px;
+      padding: 16px 42px;
+    }
     &:focus,
     &:hover {
       border-color: var(--color-primary-accent);
