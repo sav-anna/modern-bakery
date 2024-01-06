@@ -18,7 +18,8 @@
     "url": "hhttps://sav-anna.github.io/modern-bakery"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

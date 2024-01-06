@@ -52,6 +52,9 @@
 
     &__link {
       @include text($font-weight: 600, $color: var(--color-primary-light));
+      @media screen and (min-width: $tablet) {
+        font-size: 12px;
+      }
     }
 
     &:hover,

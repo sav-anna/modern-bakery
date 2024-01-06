@@ -1,6 +1,4 @@
 .contacts {
-  padding-bottom: 96px;
-
   &__container {
     @include centeredFlex();
     gap: 32px;

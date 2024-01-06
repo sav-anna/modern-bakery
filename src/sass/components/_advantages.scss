@@ -4,6 +4,9 @@
     background-color: var(--color-primary-accent);
     padding: 16px 0;
   }
+  &__container {
+    padding-bottom: 0;
+  }
 
   &__list {
     max-width: 318px;

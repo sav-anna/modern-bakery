@@ -1,52 +1,88 @@
 <section id="formats-section" class="formats">
   <div class="container">
     <h2 class="title">Формати</h2>
-    <ul class="formats__list">
-      <li class="formats__item">
-        <img
-          class="formats__img"
-          src="./images/walrus.jpg"
-          alt="Walrus baker"
-        />
-        <article class="formats__card">
-          <h3 lang="en" class="formats__subtitle">Walrus</h3>
-          <p class="formats__text">
-            Площа: до 120 м2 <br />Меню: розширене меню <br />Штат: 2
-            продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби
-            <br />Посадкові місця: є
-          </p>
-        </article>
-      </li>
-      <li class="formats__item">
-        <img
-          class="formats__img"
-          src="./images/horseshoe.jpg"
-          alt="Horseshoe baker"
-        />
-        <article class="formats__card">
-          <h3 lang="en" class="formats__subtitle">Horseshoe</h3>
-          <p class="formats__text">
-            Площа: до 25 м2 <br />
-            Меню: найпопулярніші позиції меню <br />Штат: 2 продавці-касири, 2
-            пекарі, 1 помічник пекаря <br />Посадкові місця: відсутні
-          </p>
-        </article>
-      </li>
-      <li class="formats__item">
-        <img
-          class="formats__img"
-          src="./images/handlebar.jpg"
-          alt="Handlebar baker"
-        />
-        <article class="formats__card">
-          <h3 lang="en" class="formats__subtitle">Handlebar</h3>
-          <p class="formats__text">
-            Площа: до 15 м2 <br />Меню: найпопулярніші позиції меню <br />Штат:
-            1 продавець, 1 пекар, 1 помічник <br />пекаря <br />Посадкові місця:
-            відсутні
-          </p>
-        </article>
-      </li>
-    </ul>
+    <div class="formats__slider">
+      <button class="formats__button swiper-button prev" type="button">
+        <svg width="16" height="16">
+          <use href="./images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </button>
+      <div class="swiper">
+        <ul class="formats__list swiper-wrapper">
+          <li class="formats__item swiper-slide">
+            <img
+              class="formats__img"
+              src="./images/walrus.jpg"
+              alt="Walrus baker"
+            />
+            <article class="formats__card">
+              <h3 lang="en" class="formats__subtitle">Walrus</h3>
+              <p class="formats__text">
+                Площа: до 120 м2 <br />Меню: розширене меню <br />Штат: 2
+                продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                офіціанти-різнороби <br />Посадкові місця: є
+              </p>
+            </article>
+          </li>
+          <li class="formats__item swiper-slide">
+            <img
+              class="formats__img"
+              src="./images/horseshoe.jpg"
+              alt="Horseshoe baker"
+            />
+            <article class="formats__card">
+              <h3 lang="en" class="formats__subtitle">Horseshoe</h3>
+              <p class="formats__text">
+                Площа: до 25 м2 <br />
+                Меню: найпопулярніші позиції меню <br />Штат: 2 продавці-касири,
+                2 пекарі, 1 помічник пекаря <br />Посадкові місця: відсутні
+              </p>
+            </article>
+          </li>
+          <li class="formats__item swiper-slide">
+            <img
+              class="formats__img"
+              src="./images/handlebar.jpg"
+              alt="Handlebar baker"
+            />
+            <article class="formats__card">
+              <h3 lang="en" class="formats__subtitle">Handlebar</h3>
+              <p class="formats__text">
+                Площа: до 15 м2 <br />Меню: найпопулярніші позиції меню
+                <br />Штат: 1 продавець, 1 пекар, 1 помічник <br />пекаря
+                <br />Посадкові місця: відсутні
+              </p>
+            </article>
+          </li>
+          <li class="formats__item swiper-slide">
+            <img
+              class="formats__img"
+              src="./images/walrus.jpg"
+              alt="Walrus baker"
+            />
+            <article class="formats__card">
+              <h3 lang="en" class="formats__subtitle">Walrus</h3>
+              <p class="formats__text">
+                Площа: до 120 м2 <br />Меню: розширене меню <br />Штат: 2
+                продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                офіціанти-різнороби <br />Посадкові місця: є
+              </p>
+            </article>
+          </li>
+        </ul>
+        <div class="pagination">
+          <span class="pagination__button"></span>
+          <span class="pagination__button"></span>
+          <span class="pagination__button"></span>
+          <span class="pagination__button"></span>
+        </div>
+      </div>
+
+      <button class="formats__button swiper-button next" type="button">
+        <svg width="16" height="16">
+          <use href="./images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
