@@ -1,2 +1,0 @@
-const e=document.querySelector(".backdrop"),t=document.querySelector(".btn-order"),i=document.querySelector(".modal__close-btn"),n=()=>e.classList.toggle("is-hidden");t.addEventListener("click",n),i.addEventListener("click",n);new Swiper(".swiper",{loop:!0,slidesPerView:1,spaceBetween:20,breakpoints:{768:{slidesPerView:2},1280:{slidesPerView:3}},pagination:{el:".pagination",bulletClass:"pagination__button",bulletActiveClass:"pagination__button--active"},navigation:{nextEl:".swiper-button.next",prevEl:".swiper-button.prev"}});
-//# sourceMappingURL=index.c88f437d.js.map
