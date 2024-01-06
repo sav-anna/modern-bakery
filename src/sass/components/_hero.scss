@@ -21,7 +21,7 @@
         rgba(18, 18, 17, 0.6) 58.46%,
         rgba(18, 18, 17, 0) 90.36%
       ),
-      url(./../images/hero-mobile2x.jpg);
+      url(./../images/hero-mobile@2x.jpg);
   }
   @media screen and (min-width: $tablet) {
     // max-width: 1440px;
@@ -44,7 +44,7 @@
           rgba(18, 18, 17, 0.6) 58.46%,
           rgba(18, 18, 17, 0) 90.36%
         ),
-        url(./../images/hero-desktop2x.jpg);
+        url(./../images/hero-desktop@2x.jpg);
     }
   }
 
