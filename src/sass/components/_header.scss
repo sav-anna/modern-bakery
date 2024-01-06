@@ -55,6 +55,9 @@
       @media screen and (min-width: $tablet) {
         font-size: 12px;
       }
+      @media screen and (min-width: $desktop) {
+        font-size: 18px;
+      }
     }
 
     &:hover,
