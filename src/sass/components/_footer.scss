@@ -66,11 +66,18 @@
     @include centeredFlex();
     gap: 18px;
     flex-direction: column;
+    text-align: center;
 
     @media screen and (min-width: $tablet) {
       @include centeredFlex($align: flex-start, $justify: left);
       gap: 16px;
       width: 211px;
+    }
+  }
+  &__policy-block {
+    gap: 8px;
+    @media screen and (min-width: $tablet) {
+      gap: 16px;
     }
   }
 

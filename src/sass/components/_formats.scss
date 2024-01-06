@@ -1,7 +1,18 @@
 .formats {
+  &__container {
+    max-width: 1240px;
+  }
   &__slider {
+    width: 321px;
+    margin: 0 auto;
     @include centeredFlex();
     gap: 32px;
+    @media screen and (min-width: $tablet) {
+      width: 891px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 1240px;
+    }
   }
   &__list {
     margin-bottom: 32px;

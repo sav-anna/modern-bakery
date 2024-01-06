@@ -1,5 +1,6 @@
 .advantages {
-  padding: 21px 40px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   @media screen and (min-width: $tablet) {
     background-color: var(--color-primary-accent);
     padding: 16px 0;
@@ -10,6 +11,7 @@
 
   &__list {
     max-width: 318px;
+    margin: 0 auto;
     padding: 24px 40px;
     background-color: var(--color-advantages-section);
     border-radius: 24px;

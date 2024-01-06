@@ -1,7 +1,7 @@
 .header {
   position: absolute;
   width: 100%;
-  top: 0;
+  top: 16px;
   left: 0;
   padding: 16px 20px;
 
@@ -13,7 +13,7 @@
     height: 38px;
     @include centeredFlex($justify: space-between);
     @media screen and (min-width: $tablet) {
-      width: 1024px;
+      width: 900px;
       height: 59px;
     }
     @media screen and (min-width: $desktop) {
@@ -32,14 +32,26 @@
     &__burger-menu {
       display: block;
       cursor: pointer;
-
+      background-color: transparent;
+      fill: var(--color-primary-light);
+      border: none;
       @media screen and (min-width: $tablet) {
+        width: 44px;
+        height: 44px;
+      }
+      @media screen and (min-width: $desktop) {
         display: none;
+      }
+    }
+    &__icon {
+      @media screen and (min-width: $tablet) {
+        width: 34px;
+        height: 34px;
       }
     }
     &__part {
       display: none;
-      @media screen and (min-width: $tablet) {
+      @media screen and (min-width: $desktop) {
         display: flex;
         gap: 152px;
       }
