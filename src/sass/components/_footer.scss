@@ -112,6 +112,14 @@
   }
   &__icon {
     fill: var(--color-primary-light);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color fill 250ms var(--distribution-time);
+    &:hover,
+    &:focus {
+      fill: var(--color-primary-accent);
+      background-color: var(--color-primary-light);
+    }
   }
   &__logo {
     width: 72px;

@@ -10,10 +10,11 @@
   background-color: var(--color-primary-accent);
   border-radius: 8px;
   border: 2px solid var(--color-primary-accent);
+  transition: background-color 250ms var(--distribution-time);
   &:hover,
   &:focus {
     color: var(--color-secondary-accent);
-    background-color: transparent;
+    background-color: var(--color-primary-light);
   }
   @media screen and(min-width:$tablet) {
     width: 238px;

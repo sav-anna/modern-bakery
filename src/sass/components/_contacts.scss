@@ -54,6 +54,7 @@
     @media screen and (min-width: $tablet) {
       width: 605px;
       padding: 16px 42px;
+      transition: background-color 250ms var(--distribution-time);
     }
     &:focus,
     &:hover {
